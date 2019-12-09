@@ -1,6 +1,6 @@
 # Stuvv (back-end repo)
 
-This repo serves as the server API for the project [Stuvv](https://github.com/tlowande/stuvv-api), a marketplace that allows users to rent their personal-seasonal belongings and make extra cash out of it by facilitating their communication.
+This repo serves as the server API for the project [Stuvv](https://github.com/tlowande/stuvv-react-frontend), a marketplace that allows users to rent their personal-seasonal belongings and make extra cash out of it by facilitating their communication.
 
 This server and database have been deployed at Heroku.
 
