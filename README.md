@@ -1,6 +1,14 @@
 # Stuvv (back-end repo)
 
-This repo serves as the server API for [this project](https://github.com/TYLER-JM/stuvv-react-frontend).
+This repo serves as the server API for the project [Stuvv](https://github.com/tlowande/stuvv-api), a marketplace that allows users to rent their personal-seasonal belongings and make extra cash out of it by facilitating their communication.
+
+This server and database have been deployed at Heroku.
+
+This project was bootstrapped with the `rails new` command in the command line. As such, the following gems come pre-installed:
+
+- puma
+- bootsnap
+- tzinfo-data
 
 #### Requirements
 
@@ -10,10 +18,12 @@ This repo serves as the server API for [this project](https://github.com/TYLER-J
 
 ### Set-Up
 
-- after cloning the repo be sure to run `bundle install` to install the dependencies
-- run `rails db:migrate` to set-up the database
+- after cloning the repo be sure to run `bundle install` to install all the dependencies
+- the folder and file `config/database.yml` already have the setup for your psql DB
+- it’s time to have Rails create an empty database for you. You can do this by running `rake db:create`
+- run `rails db:migrate` to create all the tables needed or `rails db:reset` to clear up the database
 - (optional) run `rails db:seed` to already have users and some listings without pictures in it
-- run `rails s` to start the server
+- run `rails s` to start the server on development mode
 
 You should be ready to get the front-end up and running now.
 
@@ -25,29 +35,10 @@ You should be ready to get the front-end up and running now.
 - rack-cors
 - bcrypt
 
-This project was bootstrapped with the `rails new` command in the command line. As such, the following gems come pre-installed:
-
-- puma
-- bootsnap
-- tzinfo-data
-
 ### Dev Dependencies
 
 - byebug
 - factory_bot_rails
-- faker
 - listen
 - spring
 - spring-watcher-listen
-
----
-
-Things we may want to cover:
-
-- Configuration
-
-- Database creation
-
-- Database initialization
-
-- Deployment instructions
